@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+    <xsl:template match="/encuestas">
+        <html>
+            <head>
+                <title>Resultats de l'Enquesta</title>
+                <style>
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        border: 1px solid black;
+                        padding: 8px;
+                        text-align: left;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Resultats de l'Enquesta</h1>
+                <xsl:for-each select="encuesta">
+                    <h2>Enquesta - <xsl:value-of select="data"/> a <xsl:value-of select="lugar/ciudad"/></h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <xsl:for-each select="persona/respuestas/respuesta[1]">
+                                    <th>Pregunta 1</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[2]">
+                                    <th>Pregunta 2</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[3]">
+                                    <th>Pregunta 3</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[4]">
+                                    <th>Pregunta 4</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[5]">
+                                    <th>Pregunta 5</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[6]">
+                                    <th>Pregunta 6</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[7]">
+                                    <th>Pregunta 7</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[8]">
+                                    <th>Pregunta 8</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[9]">
+                                    <th>Pregunta 9</th>
+                                </xsl:for-each>
+                                <xsl:for-each select="persona/respuestas/respuesta[10]">
+                                    <th>Pregunta 10</th>
+                                </xsl:for-each>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <xsl:for-each select="persona">
+                                <tr>
+                                    <td><xsl:value-of select="nombre"/></td>
+                                    <xsl:for-each select="respuestas/respuesta">
+                                        <td><xsl:value-of select="."/></td>
+                                    </xsl:for-each>
+                                </tr>
+                            </xsl:for-each>
+                        </tbody>
+                    </table>
+                    <br/>
+                </xsl:for-each>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
