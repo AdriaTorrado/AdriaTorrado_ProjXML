@@ -1,88 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<enquestes>
-	 <enquesta id="ID" data="2024-07-26" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="encuesta.xsd">
-	 <lloc> 
-		 <carrer>Carrer Gran de Gràcia</carrer> 
-		 <ciutat>Barcelona</ciutat> <provincia>Barcelona
-		 </provincia> 
-		 <pais>Espanya</pais> 
-	 </lloc> 
- <participants id="1"> <participant>
-	 <pregunta>Quina és la teva edat?</pregunta>
-	 <respostes> 
-		<resposta>
-			 <valor>30</valor>
-		</resposta>
-	<pregunta>Quina és la teva professió?</pregunta>
-		<resposta>
-			 <valor>Enginyer</valor>
-		</resposta> 
-		<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
-		<resposta>
-			<valor>Llegir</valor>
-		</resposta> 
-	</respostes> 
-</participant> 
-<participant id="2">
-	<pregunta>Quina és la teva edat?</pregunta>
-	<respostes> 
-		<resposta>
-			<valor>25</valor>
-		</resposta>
-	<pregunta>Quina és la teva professió?</pregunta>
-		<resposta>
-			<valor>Professor</valor>
-		</resposta> 
-	<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
-		<resposta>
-			<valor>Esquiar</valor>
-		</resposta> 
-	</respostes> 
-</participant> 
-<participant id="3">
-<pregunta>Quina és la teva edat?</pregunta>
-	<respostes> 
-		<resposta>
-			<valor>40</valor>
-		</resposta> 
-<pregunta>Quina és la teva professió?</pregunta>		
-		<resposta>
-			<valor>Metge</valor>
-		</resposta> 
-<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
-		<resposta>
-		<valor>Cuinar</valor>
-		</resposta> 
-<pregunta>Quina és la teva pel·lícula favorita?</pregunta>
-		<resposta>
-			<valor>El Padrí</valor>
-		</resposta> 
-		<pregunta>Quin és el teu llibre favorit?</pregunta>
-		<resposta>
-			<valor>1984</valor>
-		</resposta> 
-	</respostes> 
-</participant> 
-<participant id="4">
-<pregunta>Quina és la teva edat?</pregunta>
-	<respostes> 
-		<resposta>
-			<valor>35</valor>
-		</resposta> 
-<pregunta>Quina és la teva professió?</pregunta>
-		<resposta>
-			<valor>Arquitecte</valor>
-		</resposta>
-<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
-		<resposta>
-			<valor>Viatjar</valor>
-		</resposta>
-<pregunta>Quin és el teu color favorit?</pregunta>
-		<resposta>
-			<valor>Blau</valor>
-		</resposta> 
-	</respostes> 
-</participant> 
-</participants> 
-</enquesta>
+<enquestes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="encuesta.xsd">
+	<enquesta id="ID" data="2024-07-26">
+		<lloc>
+			<carrer>Carrer Gran de Gràcia</carrer>
+			<ciutat>Barcelona</ciutat>
+			<provincia>Barcelona</provincia>
+			<pais>Espanya</pais>
+		</lloc>
+		<participants>
+			<participant id="1">
+				<pregunta>Quina és la teva edat?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>30</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quina és la teva professió?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Enginyer</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Llegir</valor>
+					</resposta>
+				</respostes>
+			</participant>
+			<participant id="2">
+				<pregunta>Quina és la teva edat?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>25</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quina és la teva professió?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Professor</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Esquiar</valor>
+					</resposta>
+				</respostes>
+			</participant>
+			<participant id="3">
+				<pregunta>Quina és la teva edat?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>40</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quina és la teva professió?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Metge</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Cuinar</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quina és la teva pel·lícula favorita?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>El Padrí</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quin és el teu llibre favorit?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>1984</valor>
+					</resposta>
+				</respostes>
+			</participant>
+			<participant id="4">
+				<pregunta>Quina és la teva edat?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>35</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quina és la teva professió?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Arquitecte</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Què t'agrada fer en el teu temps lliure?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Viatjar</valor>
+					</resposta>
+				</respostes>
+				<pregunta>Quin és el teu color favorit?</pregunta>
+				<respostes>
+					<resposta>
+						<valor>Blau</valor>
+					</resposta>
+				</respostes>
+			</participant>
+		</participants>
+	</enquesta>
+</enquestes>
